@@ -1,5 +1,13 @@
 export default class PostAPI {
 
+//store
+static storePost(storedPost) {
+  localStorage.setItem("posts", JSON.stringify(posts));
+}
+//get
+static getPost(getPost) {
+  var posts = JSON.parse( localStorage.getItem("posts") || "[]" );
+}
 // post list
 static getAllPosts() {
   const posts = JSON.parse(localStorage.getItem("post-list" || "[]"));

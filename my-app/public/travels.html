@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trip Chat - Discussion</title>
+    <title>Trip Chat - Travels</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
@@ -26,22 +26,26 @@
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>Discussion Boards</h1>
+      <h1>Recent Travels</h1>
     </section>
 
     <!---------- discussion ----------->
 
-    <section class="discussion">
-      <h1>Country Discussions</h1>
+    <section class="travels">
+      <h1>Travel History</h1>
       <p>
-        Read posts or make your own post under a certain country discussion.
+        Here you can add recent travels and share items brought with you.
       </p>
       <div class="comment-box">
-        <h3>Start a post</h3>
+        <h3>Share a recent trip!</h3>
         <form class="comment-form">
           <input type="text" placeholder="Enter Name" />
           <input type="text" placeholder="Enter Country" />
-          <textarea rows="5" placeholder="Your Question"></textarea>
+          <label for="img">Picture of what you brought:</label>
+          <input type="file" id="imgInp" accept="image/*" />
+          <img id="output" />
+          <input type="submit">
+          <textarea rows="5" placeholder="Comments on the trip: "></textarea>
           <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
         </form>
       </div>
@@ -60,6 +64,7 @@
 
     <!----JavaScript for toggle menu---->
     <script>
+    
       var navLinks = document.getElementById("navLinks");
 
       function showMenu() {
@@ -70,5 +75,15 @@
         navLinks.style.right = "-200px";
       }
     </script>
+    <!----Generate temp image---->
+    <script>  
+imgInp.onchange = evt => {
+  const [file] = imgInp.files
+  if (file) {
+    output.src = URL.createObjectURL(file)
+  }
+}
+    </script>
   </body>
 </html>
+
