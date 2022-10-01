@@ -1,8 +1,10 @@
+import PostList from "./database.js";
+
 export default class PostAPI {
 
 // post list
 static getAllPosts() {
-  const posts = JSON.parse(localStorage.getItem("post-list" || "[]"));
+  const posts = JSON.parse(localStorage.getItem(PostList || "[]"));
 
   return posts.sort((a,b) => {
     return new Date(a.updated) > new Date(b.updated) ? -1 : 1;
@@ -30,14 +32,14 @@ static savePost(postToSave){
         notes.push(postToSave);
     }
 
-    localStorage.setItem("post-list", JSON.stringify(posts));
+    localStorage.setItem(PostList, JSON.stringify(posts));
 }
 
 static deletePost(id) {
     const posts = PostAPI.getAllPosts();
     const newPosts = posts.filter(post => post.id != post.id);
 
-    localStorage.setItem("notes-list", JSON.stringify(newPosts));
+    localStorage.setItem(PostList, JSON.stringify(newPosts));
 }
 }
 
