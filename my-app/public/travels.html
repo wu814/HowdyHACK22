@@ -42,8 +42,15 @@
           <input type="text" placeholder="Enter Name" />
           <input type="text" placeholder="Enter Country" />
           <label for="img">Picture of what you brought:</label>
-          <input type="file" id="imgInp" accept="image/*" />
-          <img id="output" />
+          <input type="file" id="imgInp" accept="image/*"/>
+          <img id="output"/>
+          <style>
+            img
+            {
+                width: 250px;
+                height: 250px;
+            }
+          </style>
           <input type="submit">
           <textarea rows="5" placeholder="Comments on the trip: "></textarea>
           <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
