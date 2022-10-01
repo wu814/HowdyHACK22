@@ -29,3 +29,14 @@ function App(){
 }
 
 export default App
+
+/*
+class Post extends React.Component {
+  render() {
+    return (
+      <div class="post__preview">
+            <input class="post__title" type="text"></input>
+            <textarea class="post__body"></textarea>
+        </div>
+    );
+      */
