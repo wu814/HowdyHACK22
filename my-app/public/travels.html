@@ -19,7 +19,7 @@
           <i class="fa fa-close" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="course.html">DISCUSSION</a></li>
+            <li><a href="discussion.html">DISCUSSION</a></li>
             <li><a href="travels.html">RECENT TRAVELS</a></li>
             <li><a href="blog.html">USER PROFILE</a></li>
           </ul>
@@ -33,27 +33,30 @@
 
     <section class="travels">
       <h1>Travel History</h1>
-      <p>
-        Here you can add recent travels and share items brought with you.
-      </p>
+      <p>Here you can add recent travels and share items brought with you.</p>
       <div class="comment-box">
         <h3>Share a recent trip!</h3>
         <form class="comment-form">
           <input type="text" placeholder="Enter Name" />
           <input type="text" placeholder="Enter Country" />
           <label for="img">Picture of what you brought:</label>
-          <input type="file" id="imgInp" accept="image/*"/>
-          <img id="output"/>
+          <input type="file" id="imgInp" accept="image/*" />
+          <img id="output" />
           <style>
-            img
-            {
-                width: 250px;
-                height: 250px;
+            img {
+              width: 250px;
+              height: 250px;
             }
           </style>
-          <input type="submit">
+          <input type="submit" />
           <textarea rows="5" placeholder="Comments on the trip: "></textarea>
-          <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
+          <button
+            type="submit"
+            onclick="handleSubmit()"
+            class="hero-btn red-btn"
+          >
+            POST
+          </button>
         </form>
       </div>
     </section>
@@ -71,7 +74,6 @@
 
     <!----JavaScript for toggle menu---->
     <script>
-    
       var navLinks = document.getElementById("navLinks");
 
       function showMenu() {
@@ -83,14 +85,13 @@
       }
     </script>
     <!----Generate temp image---->
-    <script>  
-imgInp.onchange = evt => {
-  const [file] = imgInp.files
-  if (file) {
-    output.src = URL.createObjectURL(file)
-  }
-}
+    <script>
+      imgInp.onchange = (evt) => {
+        const [file] = imgInp.files;
+        if (file) {
+          output.src = URL.createObjectURL(file);
+        }
+      };
     </script>
   </body>
 </html>
-
