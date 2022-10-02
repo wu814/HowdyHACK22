@@ -1,3 +1,6 @@
 # HowdyHACK22
-
-#Yo
+#Members:
+#William Wu
+#Sean Wells
+#Michael Ades
+#Salem Saleh
