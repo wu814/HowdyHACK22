@@ -1,12 +1,32 @@
 import React from 'react'
 import express from 'express'
 import path from 'path'
+import Testomonial from "./Testimonial"
+import Posts from "./Posts"
 const session = require('express-session');
 const compression = require('compression')
 const FileStore = require('session-file-store')(session);
 
 const app = express();
 const now = new Date();
+/*
+return (
+  <div className="App">
+<Posts
+  name={"Michael"}
+  date={"10/2/2022"}
+  country={"United States"}
+  photo={"Lorem ipsum"}
+  text={"I travelled to Japan!"}
+/>
+</div>
+)
+*/
+
+
+
+
+
 
 // formatting app
 app.use(express.text({limit: '500mb'}));
