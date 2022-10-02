@@ -1,31 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import express from 'express'
+import path from 'path'
+const session = require('express-session');
+const compression = require('compression')
+const FileStore = require('session-file-store')(session);
 
 function App(){
-  const {data, setData} = useState([{}])
-  useEffect(() => {
-    fetch("/members").then(
-      res => res.json()
-    ).then(
-      data => {
-        setData(data)
-        console.log(data)
-      }
-    )
-  }, [])
-  return (
-    <div>
-      {(typeof data.members === 'undefined') ? (
-        <p>Loading...</p>
-      ) : (
-        data.members.map((member, i) => (
-          <p key={i}>(member)</p>
-        ))
-      )}
-      <h1>
-        Hello
-      </h1>
-    </div>
-  )
 }
 
 export default App
