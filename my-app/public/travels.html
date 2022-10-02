@@ -1,7 +1,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
 
     <title>Trip Chat - Travels</title>
     <link rel="stylesheet" href="style.css" />
@@ -14,16 +17,32 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body style="background-color: rgb(100, 110, 147);">
+  <body style="background-color: rgb(100, 110, 147)">
     <section class="sub-header">
       <nav>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-close" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="index.html">HOME<span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a href="discussion.html">DISCUSSION<span class="glyphicon glyphicon-pencil"></span></a></li>
-            <li><a href="travels.html">TRAVELS<span class="glyphicon glyphicon-plane"></span></a></li>
-            <li><a href="userprofile.html">USER PROFILE <span class="glyphicon glyphicon-user"></span></a></li>
+            <li>
+              <a href="index.html"
+                >HOME<span class="glyphicon glyphicon-home"></span
+              ></a>
+            </li>
+            <li>
+              <a href="discussion.html"
+                >DISCUSSION<span class="glyphicon glyphicon-pencil"></span
+              ></a>
+            </li>
+            <li>
+              <a href="travels.html"
+                >TRAVELS<span class="glyphicon glyphicon-plane"></span
+              ></a>
+            </li>
+            <li>
+              <a href="userprofile.html"
+                >USER PROFILE <span class="glyphicon glyphicon-user"></span
+              ></a>
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -40,21 +59,23 @@
     </style>
 
     <section class="travels">
-      <h1>Travel History</h1>
+      <h1 style="color: white">Travel History</h1>
       <p>Here you can add recent travels and share items brought with you.</p>
       <div class="comment-box">
         <button id="new_post_button" onclick="swapDisplay()">New Trip</button>
-        <form id="c-form" class="comment-form" style="display: none;">
+        <form id="c-form" class="comment-form" style="display: none">
           <input type="text" placeholder="Enter Name" />
           <input type="text" placeholder="Enter Country" />
           <label for="img">A picture to share:</label>
           <input type="file" id="imgInp" accept="image/*" />
-          <img style="display: none;" id="output" />
+          <img style="display: none" id="output" />
           <textarea rows="5" placeholder="Comments on the trip"></textarea>
           <button
             type="submit"
             onclick="handleSubmit()"
-            class="hero-btn red-btn">POST
+            class="hero-btn red-btn"
+          >
+            POST
           </button>
         </form>
       </div>
@@ -97,13 +118,12 @@
     <!--New post display switch-->
     <script>
       function swapDisplay() {
-        if(document.getElementById("c-form").style.display == "block"){
+        if (document.getElementById("c-form").style.display == "block") {
           document.getElementById("c-form").style.display = "none";
-        }
-        else{
+        } else {
           document.getElementById("c-form").style.display = "block";
         }
       }
-      </script>
+    </script>
   </body>
 </html>

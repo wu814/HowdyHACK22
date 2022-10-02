@@ -140,12 +140,13 @@ h2{
     font-weight: 600;
 }
 p{
-    color: rgb(0, 0, 0);
+    color:white;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
+
 .row{
     margin-top: 5%;
     display: flex;
@@ -195,6 +196,7 @@ h3{
     margin: 0 auto;
 }
 .footer h4{
+    color: white;
     margin-bottom: 10px;
     margin-top: 20px;
     font-weight: 600;

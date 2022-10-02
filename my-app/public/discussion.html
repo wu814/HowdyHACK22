@@ -1,7 +1,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
 
     <title>Trip Chat - Discussion</title>
     <link rel="stylesheet" href="style.css" />
@@ -15,16 +18,32 @@
     />
     <link rel="stylesheet" href="poststyles.css" />
   </head>
-  <body style="background-color: rgb(100, 110, 147);">
+  <body style="background-color: rgb(100, 110, 147)">
     <section class="sub-header">
       <nav>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-close" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="index.html">HOME<span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a href="discussion.html">DISCUSSION<span class="glyphicon glyphicon-pencil"></span></a></li>
-            <li><a href="travels.html">TRAVELS<span class="glyphicon glyphicon-plane"></span></a></li>
-            <li><a href="userprofile.html">USER PROFILE <span class="glyphicon glyphicon-user"></span></a></li>
+            <li>
+              <a href="index.html"
+                >HOME<span class="glyphicon glyphicon-home"></span
+              ></a>
+            </li>
+            <li>
+              <a href="discussion.html"
+                >DISCUSSION<span class="glyphicon glyphicon-pencil"></span
+              ></a>
+            </li>
+            <li>
+              <a href="travels.html"
+                >TRAVELS<span class="glyphicon glyphicon-plane"></span
+              ></a>
+            </li>
+            <li>
+              <a href="userprofile.html"
+                >USER PROFILE <span class="glyphicon glyphicon-user"></span
+              ></a>
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -35,36 +54,40 @@
     <!---------- discussion ----------->
 
     <section class="discussion">
-      <h1>Country Discussions</h1>
+      <h1 style="color: white">Country Discussions</h1>
       <p>
         Read posts or make your own post under a certain country discussion.
       </p>
       <div class="comment-box">
         <button id="new_post_button" onclick="swapDisplay()">New Post</button>
-            <form id="post-builder" class="comment-form">
-              <input type="text" placeholder="Enter Name" />
-              <input type="text" placeholder="Enter Country" />
-              <textarea rows="5" placeholder="Your Question"></textarea>
-              <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
-            </form>
-        <hr style="margin:10%;" />
+        <form id="post-builder" class="comment-form">
+          <input type="text" placeholder="Enter Name" />
+          <input type="text" placeholder="Enter Country" />
+          <textarea rows="5" placeholder="Your Question"></textarea>
+          <button
+            type="submit"
+            onclick="handleSubmit()"
+            class="hero-btn red-btn"
+          >
+            POST
+          </button>
+        </form>
+        <hr style="margin: 10%" />
       </div>
     </section>
-
 
     <!--postas-->
     <div id="post_body">
       <div id="post_header">
-        <h2>Canada</h2>
-        <p style="line-height:normal;padding:0%">Posted by: Sean</p>
-        <hr style="margin-right: 15%; margin-left: 15%;" />
+        <h2 style="color: white">Canada</h2>
+        <p style="line-height: normal; padding: 0%">Posted by: Sean</p>
+        <hr style="margin-right: 15%; margin-left: 15%" />
       </div>
       <div id="post_info">
         <p>I really liked the maple syrup.</p>
-        <img id="image_link">
+        <img id="image_link" />
       </div>
     </div>
-
 
     <!-------- footer ---------->
 
@@ -93,13 +116,12 @@
     <!--New post display switch-->
     <script>
       function swapDisplay() {
-        if(document.getElementById("post-builder").style.display == "block"){
+        if (document.getElementById("post-builder").style.display == "block") {
           document.getElementById("post-builder").style.display = "none";
-        }
-        else{
+        } else {
           document.getElementById("post-builder").style.display = "block";
         }
       }
-      </script>
+    </script>
   </body>
 </html>
