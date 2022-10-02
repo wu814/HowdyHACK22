@@ -327,7 +327,7 @@ h3{
 }
 
 .mytabs input[type="radio"]:checked + label {
-    background: #fff;
+    background: rgb(115, 129, 176);
 }
 .blog-content{
     width: 80%;
