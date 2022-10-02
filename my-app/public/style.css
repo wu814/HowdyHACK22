@@ -302,9 +302,11 @@ h3{
 }
 .mytabs label {
     padding: 50px;
-    background: #e2e2e2;
+    background: rgb(145, 155, 187);
     font-weight: bold;
     margin: auto;
+    border-radius: 10px;
+
 }
 
 .mytabs .tab {
