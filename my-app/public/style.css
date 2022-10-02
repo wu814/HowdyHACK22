@@ -291,10 +291,12 @@ h3{
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin: 0;
+    margin: auto;
     height: 50%;
     padding: 25px;
 }
+
+
 .mytabs input[type="radio"] {
     display: none;
 }
@@ -308,7 +310,6 @@ h3{
 .mytabs .tab {
     width: 100%;
     padding: 20px;
-    background: #fff;
     order: 1;
     display: none;
 }
