@@ -1,6 +1,7 @@
+//Imports
 import express from 'express';
-import fs from 'fs';
-import path from 'path';
+import cors from 'cors'
+import { Low, JSONFile } from 'lowdb'
 
 import React from 'react';
 import ReactDOM from 'react-dom/server';

@@ -1,0 +1,23 @@
+#post-builder{
+    display: none;
+  }
+#post_body{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+    background-color: rgb(255, 242, 204);
+    border: 2px solid gray;
+}
+
+#post_header{
+    text-align: center;
+    color: rgb(40, 40, 66);
+    size: 24px;
+    text-indent: 0px;
+}
+
+#post_info{
+    text-align: justify;
+    color: rgb(40, 40, 66); 
+    text-indent: 0px;
+}

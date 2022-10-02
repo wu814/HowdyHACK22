@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="poststyles.css" />
   </head>
   <body>
     <section class="sub-header">
@@ -38,14 +39,32 @@
       </p>
       <div class="comment-box">
         <h3>Start a post</h3>
-        <form class="comment-form">
-          <input type="text" placeholder="Enter Name" />
-          <input type="text" placeholder="Enter Country" />
-          <textarea rows="5" placeholder="Your Question"></textarea>
-          <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
-        </form>
+        <button id="new_post_button" onclick="swapDisplay()">
+           <i class="glyphicon glyphicon-edit" style="font-size: 36px;"></i>
+        </button>
+            <form id="post-builder" class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="text" placeholder="Enter Country" />
+              <textarea rows="5" placeholder="Your Question"></textarea>
+              <button type="submit" onclick="handleSubmit()" class="hero-btn red-btn">POST</button>
+            </form>
       </div>
     </section>
+
+
+    <!--postas-->
+    <div id="post_body">
+      <div id="post_header">
+        <h1>Canada</h1><p>Sean</p>
+        <hr style="margin-right: 15%; margin-left: 15%;" />
+      </div>
+      <div id="post_info">
+        <p>I really liked the maple syrup.</p>
+        <img id="image_link">
+      </div>
+    </div>
+
+
     <!-------- footer ---------->
 
     <section class="footer">
@@ -70,5 +89,16 @@
         navLinks.style.right = "-200px";
       }
     </script>
+    <!--New post display switch-->
+    <script>
+      function swapDisplay() {
+        if(document.getElementById("post-builder").style.display == "block"){
+          document.getElementById("post-builder").style.display = "none";
+        }
+        else{
+          document.getElementById("post-builder").style.display = "block";
+        }
+      }
+      </script>
   </body>
 </html>
