@@ -14,4 +14,3 @@ export default function Testimonial({ name, content, review, date }) {
       </div>
     );
   }
-  
