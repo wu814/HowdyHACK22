@@ -312,6 +312,7 @@ h3{
     padding: 20px;
     order: 1;
     display: none;
+    margin:auto;
 }
 .mytabs .tab h2 {
     font-size: 3em;
