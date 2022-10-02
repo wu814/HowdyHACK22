@@ -290,7 +290,7 @@ h3{
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0;
     height: 50%;
     padding: 25px;
@@ -299,9 +299,10 @@ h3{
     display: none;
 }
 .mytabs label {
-    padding: 25px;
+    padding: 50px;
     background: #e2e2e2;
     font-weight: bold;
+    margin: auto;
 }
 
 .mytabs .tab {
