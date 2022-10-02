@@ -405,7 +405,7 @@ h3{
     margin-left: 20px;
     margin-right: 20px;
     flex-basis: 45%;
-    background: rgb(183, 192, 218);
+    background: rgb(199, 209, 237);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -415,14 +415,14 @@ h3{
 
 #post_header{
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 48, 239);
     size: 24px;
     text-indent: 0px;
 }
 
 #post_info{
-    text-align: justify;
-    color: rgb(57, 66, 40); 
+    text-align: center;
+    color: rgb(67, 17, 216); 
     text-indent: 0px;
 }
 
