@@ -291,7 +291,7 @@ h3{
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
-    margin: 0;
+    margin: auto;
     height: 50%;
     padding: 25px;
 }
@@ -311,6 +311,7 @@ h3{
     background: #fff;
     order: 1;
     display: none;
+    margin:auto;
 }
 .mytabs .tab h2 {
     font-size: 3em;
